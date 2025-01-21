@@ -34,7 +34,7 @@ def three_sum(nums: List[int]) -> List[List[int]]:
 
       # If the sum is zero, append the triplet to the result and skip duplicates
       if current_sum == 0:
-        triplets.append([nums[i], nums[low], nums[high]])
+        triplets.append(([nums[i], nums[low], nums[high]))
         # Skip duplicates of the low pointer to avoid redundant triplets
         while low < high and nums[low] == nums[low + 1]:
           low += 1
